@@ -20,7 +20,7 @@ ConfigManager::ConfigManager()
 
     loadJson();
 }
-
+//boolean loadJson() - loads the config from the JSON file. If the file doesn't exist, it initializes an empty config. If the file is corrupt, it logs a warning and resets to an empty config. Returns true on success, false on failure (e.g., file I/O issues).
 bool ConfigManager::loadJson()
 {
     QFile f(m_filePath);
